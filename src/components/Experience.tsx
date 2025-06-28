@@ -1,3 +1,4 @@
+
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -6,7 +7,7 @@ const Experience = () => {
     {
       title: 'HR Intern - Marketing',
       company: 'Fintech Pvt Ltd',
-      duration: '2024',
+      duration: '2025',
       location: 'Remote',
       description: [
         'Responsible for onboarding new clients and managing client relationships',
@@ -18,7 +19,7 @@ const Experience = () => {
     {
       title: 'Freelance Web Developer',
       company: 'Self-Employed',
-      duration: '2023 - Present',
+      duration: '2024 - Present',
       location: 'Remote',
       description: [
         'Design and develop custom web applications for clients',
