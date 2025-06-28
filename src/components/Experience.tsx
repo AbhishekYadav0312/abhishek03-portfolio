@@ -1,19 +1,18 @@
-
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
 const Experience = () => {
   const experiences = [
     {
-      title: 'Software Development Intern',
+      title: 'HR Intern - Marketing',
       company: 'Fintech Pvt Ltd',
       duration: '2024',
       location: 'Remote',
       description: [
-        'Contributed to backend systems development using Python and database technologies',
-        'Worked with MySQL and MongoDB for efficient data management',
-        'Collaborated with cross-functional teams to deliver scalable solutions',
-        'Gained hands-on experience with JWT authentication and security protocols'
+        'Responsible for onboarding new clients and managing client relationships',
+        'Conducted interviews and assisted in the recruitment process',
+        'Collaborated with marketing team to develop client acquisition strategies',
+        'Gained experience in HR processes and client relationship management'
       ]
     },
     {
