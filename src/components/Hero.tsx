@@ -14,13 +14,15 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center animate-fade-in-up">
-          {/* Profile Picture Placeholder */}
+          {/* Profile Picture */}
           <div className="mb-8 flex justify-center">
-            <div className="w-48 h-48 rounded-full bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center shadow-2xl">
-              <div className="w-44 h-44 rounded-full bg-white flex items-center justify-center">
-                <div className="w-40 h-40 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 text-6xl font-bold">
-                  AK
-                </div>
+            <div className="w-48 h-48 rounded-full bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center shadow-2xl p-2">
+              <div className="w-44 h-44 rounded-full overflow-hidden bg-white flex items-center justify-center">
+                <img 
+                  src="https://i.postimg.cc/Yq4VRYpz/absji.jpg" 
+                  alt="Abhishek Kumar - Profile Picture"
+                  className="w-40 h-40 rounded-full object-cover object-center"
+                />
               </div>
             </div>
           </div>
