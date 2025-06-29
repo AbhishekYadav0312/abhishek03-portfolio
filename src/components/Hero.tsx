@@ -1,4 +1,3 @@
-
 import { ArrowRight, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -16,14 +15,12 @@ const Hero = () => {
         <div className="text-center animate-fade-in-up">
           {/* Profile Picture */}
           <div className="mb-8 flex justify-center">
-            <div className="w-48 h-48 rounded-full bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center shadow-2xl p-2">
-              <div className="w-44 h-44 rounded-full overflow-hidden bg-white flex items-center justify-center">
-                <img 
-                  src="https://i.postimg.cc/Yq4VRYpz/absji.jpg" 
-                  alt="Abhishek Kumar - Profile Picture"
-                  className="w-40 h-40 rounded-full object-cover object-center"
-                />
-              </div>
+            <div className="w-48 h-48 rounded-full overflow-hidden shadow-2xl border-4 border-white">
+              <img 
+                src="https://i.postimg.cc/Yq4VRYpz/absji.jpg" 
+                alt="Abhishek Kumar - Profile Picture"
+                className="w-full h-full object-cover object-center"
+              />
             </div>
           </div>
 
