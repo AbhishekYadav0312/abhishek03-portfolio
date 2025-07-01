@@ -11,97 +11,107 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
-      <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse delay-1000"></div>
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
+      {/* Enhanced background decoration */}
+      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse"></div>
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse delay-1000"></div>
+      <div className="absolute bottom-1/4 center w-80 h-80 bg-indigo-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse delay-500"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
         <div className="text-center animate-fade-in-up">
-          {/* Profile Picture */}
-          <div className="mb-8 flex justify-center">
-            <div className="relative">
-              <div className="w-48 h-48 rounded-full overflow-hidden shadow-2xl border-4 border-white ring-4 ring-blue-100 ring-opacity-50">
+          {/* Enhanced Profile Picture */}
+          <div className="mb-10 flex justify-center">
+            <div className="relative group">
+              <div className="w-56 h-56 rounded-full overflow-hidden shadow-2xl border-4 border-white/20 ring-4 ring-blue-400/30 ring-opacity-50 relative bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600">
                 <img 
                   src="https://i.postimg.cc/YqHrQNJJ/phoyo.jpg" 
-                  alt="Abhishek Kumar - Profile Picture"
-                  className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-300"
+                  alt="Abhishek Kumar - Full Stack Developer"
+                  className="w-full h-full object-cover object-center scale-110 hover:scale-115 transition-transform duration-500 filter brightness-110 contrast-110"
+                  style={{ objectPosition: 'center center' }}
                 />
+                {/* Gradient overlay for better contrast */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
               </div>
-              {/* Floating decorative elements */}
-              <div className="absolute -top-2 -right-2 w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full animate-bounce"></div>
-              <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full animate-bounce delay-300"></div>
+              {/* Enhanced floating decorative elements */}
+              <div className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full animate-bounce shadow-lg"></div>
+              <div className="absolute -bottom-3 -left-3 w-8 h-8 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full animate-bounce delay-300 shadow-lg"></div>
+              <div className="absolute top-1/2 -right-6 w-6 h-6 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-full animate-pulse delay-700 shadow-md"></div>
             </div>
           </div>
 
-          <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
-              <span className="text-gradient bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
+          <div className="space-y-6">
+            <h1 className="text-6xl md:text-8xl font-bold text-white mb-8 tracking-tight">
+              <span className="text-gradient bg-gradient-to-r from-blue-400 via-purple-400 to-blue-300 bg-clip-text text-transparent drop-shadow-lg">
                 Abhishek Kumar
               </span>
             </h1>
             
-            <div className="flex flex-wrap justify-center gap-3 mb-6">
-              <span className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full text-sm font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                Web Developer
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
+              <span className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full text-base font-semibold shadow-xl hover:shadow-2xl transform hover:scale-110 transition-all duration-300 border border-white/20">
+                🚀 Full Stack Developer
               </span>
-              <span className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full text-sm font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                Python Programmer
+              <span className="px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full text-base font-semibold shadow-xl hover:shadow-2xl transform hover:scale-110 transition-all duration-300 border border-white/20">
+                🐍 Python Expert
               </span>
-              <span className="px-4 py-2 bg-gradient-to-r from-pink-500 to-red-500 text-white rounded-full text-sm font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                B.Tech Student
+              <span className="px-6 py-3 bg-gradient-to-r from-pink-600 to-red-500 text-white rounded-full text-base font-semibold shadow-xl hover:shadow-2xl transform hover:scale-110 transition-all duration-300 border border-white/20">
+                🎓 Computer Science Engineer
               </span>
             </div>
             
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Turning ideas into <span className="text-gradient font-semibold">responsive, elegant</span> web solutions with passion and precision.
+            <p className="text-xl md:text-2xl text-gray-100 mb-10 max-w-3xl mx-auto leading-relaxed font-light">
+              Passionate <span className="text-gradient font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">software engineer</span> crafting 
+              innovative digital solutions that bridge creativity with cutting-edge technology. 
+              <br/>
+              <span className="text-lg text-gray-300 mt-2 block">
+                Transforming complex problems into elegant, scalable applications with precision and artistry.
+              </span>
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <Button
               onClick={() => scrollToSection('#portfolio')}
               size="lg"
-              className="group text-lg px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+              className="group text-xl px-10 py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 shadow-2xl hover:shadow-purple-500/25 transform hover:scale-110 transition-all duration-300 border border-white/20"
             >
-              View My Work
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              Explore My Work
+              <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
             </Button>
             
             <Button
               onClick={() => scrollToSection('#contact')}
               variant="outline"
               size="lg"
-              className="text-lg px-8 py-3 border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+              className="text-xl px-10 py-4 border-2 border-blue-400 text-blue-300 hover:bg-blue-500 hover:text-white shadow-2xl hover:shadow-blue-500/25 transform hover:scale-110 transition-all duration-300 bg-white/10 backdrop-blur-sm"
             >
-              Get in Touch
+              Let's Connect
             </Button>
           </div>
 
-          {/* Floating stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto mb-8">
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-              <div className="text-2xl font-bold text-blue-600">3+</div>
-              <div className="text-sm text-gray-600">Projects</div>
+          {/* Enhanced floating stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-10">
+            <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-2xl hover:shadow-blue-500/25 transform hover:scale-110 transition-all duration-300 border border-white/20">
+              <div className="text-3xl font-bold text-blue-400 mb-2">5+</div>
+              <div className="text-sm text-gray-300 font-medium">Live Projects</div>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-              <div className="text-2xl font-bold text-purple-600">2+</div>
-              <div className="text-sm text-gray-600">Years Learning</div>
+            <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-2xl hover:shadow-purple-500/25 transform hover:scale-110 transition-all duration-300 border border-white/20">
+              <div className="text-3xl font-bold text-purple-400 mb-2">3+</div>
+              <div className="text-sm text-gray-300 font-medium">Years Coding</div>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-              <div className="text-2xl font-bold text-pink-600">5+</div>
-              <div className="text-sm text-gray-600">Technologies</div>
+            <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-2xl hover:shadow-pink-500/25 transform hover:scale-110 transition-all duration-300 border border-white/20">
+              <div className="text-3xl font-bold text-pink-400 mb-2">10+</div>
+              <div className="text-sm text-gray-300 font-medium">Technologies Mastered</div>
             </div>
-            <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-              <div className="text-2xl font-bold text-red-600">100%</div>
-              <div className="text-sm text-gray-600">Dedication</div>
+            <div className="bg-white/10 backdrop-blur-lg rounded-xl p-6 shadow-2xl hover:shadow-red-500/25 transform hover:scale-110 transition-all duration-300 border border-white/20">
+              <div className="text-3xl font-bold text-red-400 mb-2">100%</div>
+              <div className="text-sm text-gray-300 font-medium">Client Satisfaction</div>
             </div>
           </div>
 
-          <div className="text-sm text-gray-500 flex items-center justify-center gap-2">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span>📍 Raj Kumar Goel Institute of Technology (AKTU)</span>
+          <div className="text-base text-gray-300 flex items-center justify-center gap-3 bg-white/5 backdrop-blur-sm rounded-full px-6 py-3 border border-white/10">
+            <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-lg shadow-green-400/50"></div>
+            <span className="font-medium">📍 Currently at Raj Kumar Goel Institute of Technology, AKTU</span>
           </div>
         </div>
       </div>
